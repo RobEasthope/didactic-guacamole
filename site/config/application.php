@@ -72,3 +72,6 @@ define('DISALLOW_FILE_EDIT', true);
 if (!defined('ABSPATH')) {
   define('ABSPATH', $webroot_dir . '/wp/');
 }
+
+// Define Sage theme as the default
+define('WP_DEFAULT_THEME', 'sage');
