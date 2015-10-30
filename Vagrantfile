@@ -3,7 +3,7 @@
 
 require 'yaml'
 
-ANSIBLE_PATH = __dir__ # absolute path to Ansible directory
+ANSIBLE_PATH = File.join(__dir__, 'ansible') # absolute path to Ansible directory
 
 # Set Ansible roles_path relative to Ansible directory
 ENV['ANSIBLE_ROLES_PATH'] = File.join(ANSIBLE_PATH, 'vendor', 'roles')
