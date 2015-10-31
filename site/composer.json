@@ -40,7 +40,8 @@
     "roots/soil": "^3.5",
     "wpackagist-plugin/advanced-custom-fields": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/contact-form-7": "*"
+    "wpackagist-plugin/contact-form-7": "*",
+    "wpackagist-plugin/ricg-responsive-images": "*"
   },
   "extra": {
     "installer-paths": {

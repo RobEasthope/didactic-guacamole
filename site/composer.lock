@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bbeff611cd348bc90e6c5311451684cd",
-    "content-hash": "1d002371f3242cb0311663adbd740727",
+    "hash": "1c15921b3174f042ccd6109f4ba10ef5",
+    "content-hash": "d901735a2d8714300e324593125d65ab",
     "packages": [
         {
             "name": "composer/installers",
@@ -322,6 +322,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/ricg-responsive-images",
+            "version": "2.5.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/ricg-responsive-images/",
+                "reference": "tags/2.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ricg-responsive-images.2.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ricg-responsive-images/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
