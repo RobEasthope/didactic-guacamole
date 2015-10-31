@@ -1,0 +1,23 @@
+.navbar {
+  // border: 0;
+  background-color: white;
+}
+
+.navbar-default .navbar-brand {
+  color: $teal;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: $teal;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  color: $orange;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: right;
+  }
+}
