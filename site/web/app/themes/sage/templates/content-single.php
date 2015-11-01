@@ -2,14 +2,12 @@
   <article <?php post_class(); ?>>
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php get_template_part('templates/entry-meta'); ?>
+      <h2><?php the_field('guac_type'); ?></h2>
+      <h2><?php the_field('guac_region'); ?></h2>
     </header>
-    <div class="entry-content">
-      <?php the_content(); ?>
-    </div>
-    <footer>
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-    </footer>
+    <img src="<?php the_field('guac_photo'); ?>" alt="" />
+
+    <?php the_field('guac_description'); ?>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
 <?php endwhile; ?>
