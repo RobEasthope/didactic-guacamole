@@ -9,5 +9,5 @@
     <h1 class="strapline"><?php the_field('strapline'); ?></h1>
     <h4 class="tagline"><?php the_field('tagline'); ?></h4>
   </div>
-  <div class="dev_notes"><?php the_field('development_notes'); ?></div>
+  <div class="dev-notes"><?php the_field('development_notes'); ?></div>
 <?php endwhile; ?>

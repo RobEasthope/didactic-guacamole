@@ -87,7 +87,9 @@ function display_sidebar() {
     is_front_page(),
     is_page_template('template-custom.php'),
     is_page_template('template-no-sidebar.php'),
-    is_page_template('template-landing-page.php')
+    is_page_template('template-landing-page.php'),
+    is_category( 'Guac Recipes' ),
+    is_single()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

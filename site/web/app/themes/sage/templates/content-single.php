@@ -2,12 +2,16 @@
   <article <?php post_class(); ?>>
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <h2><?php the_field('guac_type'); ?></h2>
-      <h2><?php the_field('guac_region'); ?></h2>
+      <h2>Type: <?php the_field('guac_type'); ?> /</h2>
+      <h2>Region: <?php the_field('guac_region'); ?></h2>
     </header>
-    <img src="<?php the_field('guac_photo'); ?>" alt="" />
-
-    <?php the_field('guac_description'); ?>
-    <?php comments_template('/templates/comments.php'); ?>
+    <main>
+      <div class="guac-photo">
+        <img src="<?php the_field('guac_photo'); ?>" alt="" />
+      </div>
+      <div class="guac-description">
+        <?php the_field('guac_description'); ?>
+      </div>
+    </main>
   </article>
 <?php endwhile; ?>
